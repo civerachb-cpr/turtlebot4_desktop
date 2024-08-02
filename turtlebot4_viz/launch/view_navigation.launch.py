@@ -32,12 +32,6 @@ ARGUMENTS = [
         default_value='false',
         description='Use simulation (Gazebo) clock if true'),
     DeclareLaunchArgument(
-        'model',
-        default_value='standard',
-        choices=['standard', 'lite'],
-        description='Turtlebot4 Model'
-    ),
-    DeclareLaunchArgument(
         'namespace',
         default_value='',
         description='Robot namespace'
