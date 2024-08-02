@@ -6,9 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Camera1/Status1
       Splitter Ratio: 0.5
-    Tree Height: 858
+    Tree Height: 552
   - Class: rviz_common/Selection
     Name: Selection
   - Class: rviz_common/Tool Properties
@@ -66,220 +65,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        bump_front_center:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        bump_front_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        bump_front_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        bump_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        bump_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        bumper:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        button_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        button_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        button_power:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        cliff_front_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        cliff_front_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        cliff_side_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        cliff_side_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        front_caster_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_left_bottom_weight_block:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_left_top_weight_block:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_left_tower_standoff:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_right_bottom_weight_block:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_right_top_weight_block:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_right_tower_standoff:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        imu_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_front_center_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_front_center_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_front_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_front_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_intensity_side_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ir_omni:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        left_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        mouse:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_camera_bracket:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        oakd_imu_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_left_camera_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_left_camera_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        oakd_rgb_camera_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_rgb_camera_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_right_camera_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oakd_right_camera_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rear_left_tower_standoff:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rear_right_tower_standoff:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        right_wheel:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        rplidar_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        shell_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        tower_sensor_plate:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_drop_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        wheel_drop_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
       Mass Properties:
         Inertia: false
         Mass: false
@@ -340,6 +125,7 @@ Visualization Manager:
         LaserScan: true
         Map: true
         RobotModel: true
+        TF: true
         Value: true
       Zoom Factor: 1
     - Alpha: 0.699999988079071
@@ -365,6 +151,22 @@ Visualization Manager:
         Value: /map_updates
       Use Timestamp: false
       Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: false
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        {}
+      Update Interval: 0
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
