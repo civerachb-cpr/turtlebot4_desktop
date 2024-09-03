@@ -17,10 +17,7 @@
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import (DeclareLaunchArgument, GroupAction,
-                            IncludeLaunchDescription, TimerAction)
-from launch.conditions import IfCondition
-from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 from launch_ros.actions import Node, PushRosNamespace
@@ -42,13 +39,9 @@ ARGUMENTS = [
 def generate_launch_description():
 
     pkg_turtlebot4_viz = get_package_share_directory('turtlebot4_viz')
-    pkg_turtlebot4_description = get_package_share_directory('turtlebot4_description')
 
     rviz2_config = PathJoinSubstitution(
         [pkg_turtlebot4_viz, 'rviz', 'navigation.rviz'])
-    description_launch = PathJoinSubstitution(
-        [pkg_turtlebot4_description, 'launch', 'robot_description.launch.py']
-    )
 
     namespace = LaunchConfiguration('namespace')
 
